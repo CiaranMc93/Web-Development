@@ -1,16 +1,30 @@
 header, footer, article, section, hgroup, nav, figure
 {
 	display:block;
+	border: 2px;
+	border-style: solid;
+}
+
+body{
+	float: center;
+	background-color: #26596A;
+}
+
+header
+{
+	color: white;
+	background-color:#213E4A;
+}
+
+header h3, h1
+{
+	margin-left: 10px;
 }
 
 article .line{
-	background-color: #15242a;
+	background-color: #104050;
 	border-bottom-color: #204656;
 	margin: 1.3em 0;
-}
-
-article{
-	border:3px;
 }
 
 article h2{
@@ -25,9 +39,9 @@ nav{
 	padding:0 5px;
 	position:absolute;
 	right:0;
-	top:4em;
+	top:20px;
 
-	border:1px solid #FCFCFC;
+	background-color:white;
 
 	-moz-box-shadow:0 1px 1px #333333;
 	-webkit-box-shadow:0 1px 1px #333333;
@@ -56,7 +70,7 @@ nav ul li a:hover{
 	background-color:#f0f0f0;
 }
 
-nav, article, nav ul li a,figure{
+nav, article, header, nav ul li a,figure{
 	/* Applying CSS3 rounded corners: */
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
@@ -72,7 +86,7 @@ nav, article, nav ul li a,figure{
 }
 
 article{
-	background-color:#213E4A;
+	background-color:#104050;
 	margin:3em 0;
 	padding:20px;
 
