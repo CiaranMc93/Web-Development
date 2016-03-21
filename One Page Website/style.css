@@ -1,6 +1,7 @@
 header, footer, article, section, hgroup, nav, figure
 {
 	display:block;
+	font-family: 'Cabin';
 }
 
 body{
@@ -11,6 +12,11 @@ body{
 header
 {
 	color: white;
+	height:100%;
+	background: url("../images/coverImage.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 }
 
 header h3, h1
@@ -28,6 +34,11 @@ article h2{
 	color: white;
 }
 
+@font-face {
+font-family: 'Cabin';
+src: url("../fonts/Cabin-Regular.otf") format("opentype");
+}
+
 footer .line{
 	margin: 2em 0;
 }
@@ -35,8 +46,9 @@ footer .line{
 nav{
 	padding:0 5px;
 	position:absolute;
-	right:0;
-	top:20px;
+	margin: 0 auto;
+	left: 50%;
+	top: 0;
 
 	background-color:white;
 
@@ -79,7 +91,7 @@ nav, article, header, nav ul li a{
 /* Article styles: */
 
 #page{
-	width:960px;
+	width:100%;
 	margin:0 auto;
 	position:relative;
 }
@@ -88,6 +100,7 @@ article{
 	background-color:#104050;
 	margin:3em 0;
 	padding:20px;
+	height: 100%;
 }
 
 /* Footer styling: */
