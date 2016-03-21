@@ -18,10 +18,10 @@
 		<!-- Nav link marks the main site navigation -->
 		<nav>
 			<ul>
-				<li><a href="#" class="page1">Bio</a></li>
-				<li><a href="#" class="page2">Experience</a></li>
-				<li><a href="#" class="page3">Technologies</a></li>
-				<li><a href="#" class="page4">Hobbies</a></li>
+				<li><a href="#" onCLick="scrollToArticle(this.id); return false" id="bio">Bio</a></li>
+				<li><a href="#" onCLick="scrollToArticle(this.id); return false" id="experience">Experience</a></li>
+				<li><a href="#" onCLick="scrollToArticle(this.id); return false" id="tech">Technologies</a></li>
+				<li><a href="#" onCLick="scrollToArticle(this.id); return false" id="hobbies">Hobbies</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -30,7 +30,7 @@
 	<!-- Set up a dividing line -->
 	<div class="line"></div>
 
-	<article id="#page1"> 
+	<article name="bio" id="#page1"> 
 		<h2>Bio</h2>
 
 		<hr>
@@ -45,7 +45,7 @@
 		</div>
 	</article>
 
-	<article id="#page2"> 
+	<article name="experience" id="#page2"> 
 		<h2>Experience</h2>
 		
 		<hr>
@@ -62,7 +62,7 @@
 		</div>
 	</article>
 
-	<article id="#page3"> 
+	<article name="tech" id="#page3"> 
 		<h2>Technologies</h2>
 		
 		<hr>
@@ -78,7 +78,7 @@
 		</div>
 	</article>
 
-	<article id="#page4"> 
+	<article name="hobbies" id="#page4"> 
 		<h2>Hobbies</h2>
 
 		<hr>
