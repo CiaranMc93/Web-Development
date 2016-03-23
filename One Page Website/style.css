@@ -181,30 +181,82 @@ footer h3.cv
     font-size: 13px;
     text-align: center;
 }
-#slideNav li {
-    width: 100px;
+
+#slideNav li#slideNavDown {
     height: 50px;
     line-height: 50px;
     background-color: rgba(255,255,255,0.70);
     margin-bottom: 1px;
-}				
+
+    -moz-border-radius:30px;
+	-webkit-border-radius:30px;
+	border-radius:30px;
+
+    opacity: 0.4;
+}	
+
+#slideNav li#slideNavUp {
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(255,255,255,0.70);
+    margin-bottom: 1px;
+
+    -moz-border-radius:30px;
+	-webkit-border-radius:30px;
+	border-radius:30px;
+
+    opacity: 0.4;
+}
+
 .no-rgba  #slideNav li {background-color: #ffffff}
-#slideNav a {
+
+#slideNav a#up {
     display: block;
     width: 50px;
     height: 50px;
     position: relative;
     overflow: hidden;
     text-decoration: none;
-    color: #000000;
+    margin-left: 10px;
+
+    /* Put a button to show the user that they can go down. */
+    background: url("../images/up-button.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+
+#slideNav a#down {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+     margin-right: 10px;
+
+    /* Put a button to show the user that they can go down. */
+    background: url("../images/down-button.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 #slideNav a.disabled {
     cursor: default;
 }
 
-#slideNav a span{
-	background: url("../images/down-button.png");
-	background-repeat: no-repeat;
-	background-size: cover;
+#slideNav li:hover{
+	z-index: 12;
+	background-color: white;
+	opacity:0.8;
 }
+
+.slideNavDown {
+	float: left;
+}
+
+.slideNavUp {
+	float: right;
+}
+
+
 
