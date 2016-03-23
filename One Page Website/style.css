@@ -170,7 +170,7 @@ footer h3.cv
 #slideNav {
     display: none;
     position: fixed;
-    right: 50%;
+    right: 45%;
     top: 100%;
     margin-top: -80px;
     z-index: 11;
@@ -218,6 +218,7 @@ footer h3.cv
     overflow: hidden;
     text-decoration: none;
     margin-left: 10px;
+    margin-right: 10px;
 
     /* Put a button to show the user that they can go down. */
     background: url("../images/up-button.png");
@@ -232,7 +233,8 @@ footer h3.cv
     position: relative;
     overflow: hidden;
     text-decoration: none;
-     margin-right: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 
     /* Put a button to show the user that they can go down. */
     background: url("../images/down-button.png");
