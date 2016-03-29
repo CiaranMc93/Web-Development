@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+/* Style everything within the body */
+body {
+	background: #f0f0f0;
+	font: 14px/20px Arial, San-Serif;
+	color: #555;
+	margin: 0;
+}
+
+/* Style all h1 tags */
+h1 {
+	text-align: center;
+	font-size: 180%;
+	line-height: 120%;
+	padding: 5% 0;
+}
+
+/* Style all h2 tags */
+h2 {
+	text-decoration: underline;
+	line-height: 280%;
+	padding-left: 2%;
+}
+
+/* Style all h3 tags */
+h3 {
+	line-height: 110%;
+	padding: 5% 0;
+}
+
+/* Style all p tags */
+p {
+	padding: 1%;
+}
+
+img {
+	text-align: center;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
