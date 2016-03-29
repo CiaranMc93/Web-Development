@@ -3,15 +3,6 @@
 var temp = 'home';
 var i = 0;
 
-//prevent scroll to flashing
-$('.slideNav').click(function(e){
-        e.preventDefault();
-
-        console.log("got here");
-        
-        scrollToButtons();
-});
-
 //scrolls to the article
 function scrollToArticle(id)
 {
@@ -26,6 +17,7 @@ function scrollToArticle(id)
     
 }
 
+/* Take out until needed in the future.
 //scroll to the previous or next slide based on current one
 function scrollToButtons(id)
 {
@@ -64,6 +56,7 @@ function scrollToButtons(id)
 		}
 	}
 }
+*/
 
 //disable key scrolling
 window.addEventListener("keydown", function(e) {
