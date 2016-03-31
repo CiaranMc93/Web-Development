@@ -12,6 +12,62 @@ body {
 	margin: 0;
 }
 
+/* Style ethe header */
+header {
+	background: #405580;
+	width: 100%;
+	height: 86px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	/* Stays over anything else */
+	z-index: 100;
+	opacity: 0.90;
+}
+
+#logo {
+	margin: 20px;
+	float: left;
+	width: 200px;
+	height: 60px;
+	background: url(http://www.w3newbie.com/wp-content/uploads/the-gym.png) no-repeat center;
+}
+
+/* Navigation styling */
+nav {
+	float: right;
+	/* Padding = top left right bottom */
+	padding: 35px 20px 20px 0;
+}
+
+#menu-icon {
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background-image: url(http://www.w3newbie.com/wp-content/uploads/icon.png) center;
+}
+
+nav ul li {
+	display: inline-block;
+	float: left;
+	padding: 10px;
+}
+
+.current {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+a:hover#menu-icon {
+	/* border = top left right bottom */
+	border-radius: 4px 4px 0 0;
+
+}
+
+ul {
+	list-style: none;
+}
+
 /* Style all h1 tags */
 h1 {
 	text-align: center;
@@ -44,3 +100,60 @@ img {
 	height: auto;
 	width: auto;
 }
+
+/* Style the links */
+a {
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #FFF;
+	text-decoration: underline;
+}
+
+#doc {
+	margin: 40px 0;
+}
+
+#content {
+	margin: 0 auto;
+	max-width: 1140px;
+	margin-top: 110px;
+
+}
+
+.blueberry {
+	max-width: 960px;
+	margin-top: 110px;
+}
+
+section {
+	width: 29%;
+	float: left;
+	margin: 2% 2%;
+	text-align: center;
+}
+
+article {
+	float: left;
+	margin: 0 auto;
+	width: 50%;
+	height: auto;
+	padding: 4%;
+}
+
+aside {
+	float: right;
+	margin: 0 auto;
+	width: 35%;
+	height: auto;
+	padding: 3%;
+
+}
+
+.clear {
+	clear: both;
+}
+
