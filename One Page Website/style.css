@@ -9,7 +9,7 @@ body{
 	background-color: white;
 }
 
-header
+#top
 {
 	color: white;
 	height:100%;
@@ -17,12 +17,6 @@ header
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
-}
-
-header h3, h1
-{
-	margin-left: 10px;
-	font-size: 40px;
 }
 
 article .line{
@@ -44,12 +38,29 @@ footer .line{
 	margin: 2em 0;
 }
 
+header
+{
+	width: 100%;
+	position: fixed;
+	margin-top: 10px;
+	top: 0;
+	right: 10;
+	/* Stays over anything else */
+	z-index: 100;
+}
+
+#top h3, h1
+{
+	margin-left: 10px;
+	font-size: 40px;
+}
+
 nav{
-	padding:0 5px;
-	position:fixed;
-	margin: 0 auto;
-	left: 50%;
-	top: 15px;
+	float: right;
+	/* Padding = top left right bottom */
+	padding: 35px 20px 20px 0;
+	height: 56px;
+	display:inline-block;
 	
 	color: #000;
 
@@ -69,14 +80,12 @@ nav ul li a,
 
 nav ul li a:visited{
 	color:#565656;
-	display:block;
+	display:inline-block;
 	float:left;
+	text-align: center;	
 	font-size:1.25em;
 	font-weight:bold;
-	margin:7px 2px;
-	margin-bottom: 15px;
 	margin-right: 15px;
-	padding:7px 10px 4px;
 	text-shadow:0 1px 1px white;
 	text-transform:uppercase;
 	text-decoration: none;
@@ -111,154 +120,17 @@ article{
 }
 
 /* Footer styling: */
-
 footer{
-	margin-bottom:30px;
-	text-align:center;
-	font-size:0.825em;
+	position: fixed;
+	bottom: 0;
+	right: 10;
 }
 
-footer p{
-	margin-bottom:-2.5em;
-	position:relative;
+ul.social li {
+	display: inline;
 }
 
-footer a, footer a:visited{
-	color:#cccccc;
-	background-color:#213e4a;
-	display:block;
-	padding:2px 4px;
-	z-index:100;
-	position:relative;
+ul.social li img {
+	height: 50px;
 }
-
-footer a:hover{
-	text-decoration:none;
-	background-color:#142830;
-}
-
-footer a.by{
-	float:left;
-
-}
-
-footer a.up{
-	float:right;
-}
-
-footer h3.github
-{
-	float:left;
-	margin-right: 50px;
-	margin-left: 10px;
-}
-
-footer h3.linkedIn
-{
-	float:left;
-	margin-right: 50px;
-
-}
-
-footer h3.cv
-{
-	float:left;
-	margin-right: 50px;
-}
-
-/* Navigation */
-#slideNav {
-    display: none;
-    position: fixed;
-    right: 45%;
-    top: 100%;
-    margin-top: -80px;
-    z-index: 11;
-}
-#slideNav ul {
-    list-style: none;
-    color: #000000;
-    font-size: 13px;
-    text-align: center;
-}
-
-#slideNav li#slideNavDown {
-    height: 50px;
-    line-height: 50px;
-    background-color: rgba(255,255,255,0.70);
-    margin-bottom: 1px;
-
-    -moz-border-radius:30px;
-	-webkit-border-radius:30px;
-	border-radius:30px;
-
-    opacity: 0.4;
-}	
-
-#slideNav li#slideNavUp {
-    height: 50px;
-    line-height: 50px;
-    background-color: rgba(255,255,255,0.70);
-    margin-bottom: 1px;
-
-    -moz-border-radius:30px;
-	-webkit-border-radius:30px;
-	border-radius:30px;
-
-    opacity: 0.4;
-}
-
-.no-rgba  #slideNav li {background-color: #ffffff}
-
-#slideNav a#up {
-    display: block;
-    width: 50px;
-    height: 50px;
-    position: relative;
-    overflow: hidden;
-    text-decoration: none;
-    margin-left: 10px;
-    margin-right: 10px;
-
-    /* Put a button to show the user that they can go down. */
-    background: url("../images/up-button.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-#slideNav a#down {
-    display: block;
-    width: 50px;
-    height: 50px;
-    position: relative;
-    overflow: hidden;
-    text-decoration: none;
-    margin-right: 10px;
-    margin-left: 10px;
-
-    /* Put a button to show the user that they can go down. */
-    background: url("../images/down-button.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-#slideNav a.disabled {
-    cursor: default;
-}
-
-#slideNav li:hover{
-	z-index: 12;
-	background-color: white;
-	opacity:0.8;
-}
-
-.slideNavDown {
-	float: left;
-}
-
-.slideNavUp {
-	float: right;
-}
-
-
 

@@ -10,21 +10,24 @@
 <!-- Defining my header -->
 <!-- Give it a section -->
 <section id="page">
-	<header name="top">
+	<div id="top">
+
 		<h1 >Ciaran McManus</h1>
 
 		<h3>Software Developer</h3>
 
-		<!-- Nav link marks the main site navigation -->
-		<nav>
-			<ul>
-				<li><a href="#" onCLick="scrollToArticle(this.id); return false" id="bio">Bio</a></li>
-				<li><a href="#" onCLick="scrollToArticle(this.id); return false" id="experience">Experience</a></li>
-				<li><a href="#" onCLick="scrollToArticle(this.id); return false" id="tech">Technologies</a></li>
-				<li><a href="#" onCLick="scrollToArticle(this.id); return false" id="hobbies">Hobbies</a></li>
-			</ul>
-		</nav>
-	</header>
+		<header>
+			<!-- Nav link marks the main site navigation -->
+			<nav>
+				<ul>
+					<li><a href="#" onCLick="scrollToArticle(this.id); return false" id="bio">Bio</a></li>
+					<li><a href="#" onCLick="scrollToArticle(this.id); return false" id="experience">Experience</a></li>
+					<li><a href="#" onCLick="scrollToArticle(this.id); return false" id="tech">Technologies</a></li>
+					<li><a href="#" onCLick="scrollToArticle(this.id); return false" id="hobbies">Hobbies</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
 
 	<!-- First Page -->
 	<!-- Set up a dividing line -->
@@ -91,15 +94,17 @@
 	<!-- Marking the footer section -->
 	<footer> 
 
-		<div class="line"></div>
-
-		<h3 class="github"><a href="https://github.com/CiaranMc93">GitHub</a></h3>
-
-		<h3 class="linkedIn"><a href="https://github.com/CiaranMc93">GitHub</a></h3>
-
-		<h3 class="cv"><a href="https://github.com/CiaranMc93">GitHub</a></h3>
-
-		<a href="#" id="top">To Top of Page</a>
+		<ul class="social">
+			<li>
+				<a href="https://github.com/CiaranMc93"><img src="../images/github.png"></a>
+			</li>
+			<li>
+				<a href="https://ie.linkedin.com/in/mcmanusciaran"><img src="../images/linkedin.png"></a>
+			</li>
+			<li>
+				<a href="ciaranmcmanus@live.ie"><img src="../images/email.png"></a>
+			</li>
+		</ul>
 
 	</footer>
 
